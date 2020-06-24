@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">column number one</div>
-        <div className="col-6"><span><i className="fas fa-home" /></span></div>
-      </div>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h3>hello from app</h3>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
