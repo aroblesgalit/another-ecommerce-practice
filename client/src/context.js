@@ -62,7 +62,7 @@ class ProductProvider extends Component {
 
     openModal = id => {
         const product = this.getItem(id);
-        this.setState({
+        this.setState(() => {
             return {
                 modalProduct: product,
                 modalOpen: true
@@ -71,7 +71,7 @@ class ProductProvider extends Component {
     }
 
     closeModal = () => {
-        this.setState({
+        this.setState(() => {
             return { modalOpen: false }
         })
     }
